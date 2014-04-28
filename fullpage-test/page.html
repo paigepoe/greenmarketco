@@ -1,35 +1,149 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<style>
+/* Style for our header texts 
+	* --------------------------------------- */
+
+	.intro p{
+		color: #000;
+	}
+
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header {
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+	
+	#header{
+		top:0px;
+	}
+
+</style>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <!-- This following line is needed in case of using the default easing option or when using another
  one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
 <script src="vendors/jquery.easings.min.js"></script>   
-
-
 <!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
 <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
-
-<script type="text/javascript" src="jquery.fullPage.js"></script> 
+<script type="text/javascript" src="jquery.fullPage.js"></script>
 
 <script type="text/javascript">
-	$(document).ready(function() { 
-		$('#fullpage').fullpage();
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			slidesNavigation: true,	
+			scrollOverflow: true,		
+		});
 	});
 </script>
+
 
 </head>
 
 <body>
+
+
+
 <div id="fullpage">
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
+
+	<div class="section" id="section0">
+			<div id="truck" class="main-section">
+				<div id="truck-text">
+				<h1 class="logo-mission">Mission</h1><h1 class="logo-driven">Driven</h1><h1 class="logo-food">Food</h1>
+				<h3 class="logo-fresh">Fresh From GrowNYC</h3>
+			</div>
+			</div>
+	</div>
+
+
+	<div class="section " id="section1">
+		<div id="mission" class="main-section">
+
+				
+				<img src="img/vid-thumb.jpg" style="float:right; padding-top:175px">
+							
+			<h1 class="mission">Our Mission</h1>
+			
+			<p style="font-size:20px;"><b>Providing all New Yorkers with fresh healthy local and affordable produce.</b></p>
+		
+			<p>"Buy local" seems to be on everyone's lips and direct-to-consumer sales of agricultural products in the U.S. have increased dramatically in the past 10 years. However in spite of consumers' growing demand for locally, sustainably produced food, regional food systems often lack the infrastructure and support systems needed to move locally grown food in wholesale volumes to wholesale buyers such as food retailers, restaurants, and institutions.</p>
+			
+			<p class="readmore"><a href="#" class="readmore"><img src="http://www.grownyc.org/images/logo/GrowNYC-Circle-small-300.png" style="height:100px; width:100px; padding-right:25px; padding-left:10px; margin-top:-12px" align="right">Read more about GrowNYC's successful retail Greenmarket farmers markets here.</a></p>
+			
+			<p>In response, in 2012 GrowNYC launched  <b>Greenmarket Co.</b>, New York City's first and only "food hub" dedicated to supporting regional food producers by making their products available to wholesale buyers throughout the city.</p>
+					
+			</div>
+	</div>
+
+
+	<div class="section" id="section2">
+	    <div class="slide" id="first-slide" data-anchor="slide1">
+	    	<div id="custfarm"><h2>Our Customers</h2></div>
+	    		<div id="custfarm" class="slide-content">
+					<p>Who buys from Greenmarket Co? Quite simply, buyers looking to supply customers/clients with a consistent and reliable source of high quality locally-grown source verified foods. Our prices are competitive, our ordering and delivery system is easy and convenient.
+					When you purchase from Greenmarket Co. you and your customers know exactly where their food comes from: who grew it, where, and how. We are dedicated to 100% fully transparent and traceable sourcing. Listen to what some of our customers have to say: </p>
+				</div>
+	    </div>
+    	
+    	<div class="slide" data-anchor="slide2">
+    		<div id="custfarm"><h2>Our Farmers</h2></div>
+    			<div id="custfarm" class="slide-content">
+		    		<p>Greenmarket Co. sources from small and mid-sized farms in the Northeast region &#45; most of our product comes from New York State, but we also purchase from farms in New Jersey, Pennsylvania, and Maine. Greenmarket Co.&#39;s suppliers include 300-acre vegetable farms utilizing conventional growing practices, 200-year old fruit orchards utilizing Integrated Pest Management (IPM), small, organic vegetable farms, cooperatively marketed organic grain, and bean farms, egg producers, apiaries, and dairies. Buying locally is good for everyone: the fifty-three farmers we source from have a revenue stream for their home grown product; the land they keep in production is in agricultural use &#45; not developed. Our customers can buy with confidence knowing that this is a traceable supply chain &#45; a chain with very few links, from farmer to Greenmarket Co. and then straight to your door. Your consumers will thank you for providing the freshest best tasting goods and ingredients. At Greenmarket Co. every item we sell begins with a story and that story starts with a farmer:</p>
+				</div>
+    	</div>
+    	<div class="slide" data-anchor="slide3"> Slide 3 </div>
+    	<div class="slide" data-anchor="slide4"> Slide 4 </div>
+	</div>
+
+
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Enjoy it</h1>
+		</div>
+	</div>
+
+	<div class="section" id="section4">
+		<div id="infographic" class="main-section">
+			
+				<div style="float:left; text-align:left; width:100%">
+					<div style="float:right; display:inline; position:relative">
+					<img src="img/greenhouse.png" style="float:right">
+					</div>
+				<p style="font-size:40px; margin-bottom:10px; padding-top:15px">Local Food<br>at Every Step</p>
+				<p style="width:400px">Successful food system operators are involved at all stages of a regional food system. This engagement allows unprecedented support to local farms and New York City buyers in the form of access to markets, Innovative partnerships, merchandising assistant, food access and consumer education.</p>
+				</div>
+			<center>
+			<img src="img/arrow-right.png"><br>
+			<img src="img/packed_picked_field.png"><br>
+			<img src="img/arrow-left.png"><br>
+			<img src="img/farmtowarehouse_aggregated.png"><br>
+			<img src="img/arrow-right.png"><br>
+			<img src="img/personal_delivery_merchandising.png"><br>
+			<img src="img/arrow-middle.png"><br>
+			<img src="img/retail_rest_inst_nonprofit.png"><br>
+			
+			</center>
+				</div>
+	</div>
+
+	<div id="lavalamp"><img src="img/lavalamp.png">
+		</div>
 </div>
 </body>
 

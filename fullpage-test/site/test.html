@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!----
+http://tympanus.net/codrops/2012/12/31/how-to-create-a-simple-multi-item-slider/
+--->
+
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Simple Multi-Item Slider with CSS Animations and jQuery</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="jquery plugin, item slider, categories, apple slider, css animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			
+			<div class="main">
+				<div id="mi-slider" class="mi-slider">
+					<ul>
+						<li><h3 style="text-decoration:underline">Spring</h3>
+			<p><b>Fruit</b>: Apples</p>
+			<p><b>Vegetables</b>: Green Beans, Lettuce, Onions, Parsnips</p>
+			<p><b>Other</b>: Regional grains (freekah, emmer, faro, einkorn), honey, jam, fruit juice, cider.</p>
+						</li>
+
+					</ul>
+					<ul>
+						<li><h3 style="text-decoration:underline">Summer</h3>
+			<p><img src="img/peppers.jpg" style="float:right; margin-left:15px; border:1px solid silver"><b>Fruit</b>: Apples, Blueberries, Cantaloupe, Cherries, Currants, Peaches, Plums, Strawberries, Raspberries</p>
+			<p><b>Vegetables</b>: Asparagus, Beets, Beet Greens, Broccoli, Cabbage, Carrots, Cauliflower, Celery, Collard Greens, Corn, Cucumbers, Eggplant, Herbs, Lettuce, Onions, Peas, Peppers, Potatoes, Radishes, Rhubarb, Scallions, Spinach, Summer Squash, Tomatoes, Turnip Greens</p>
+			<p><b>Other</b>: Regional grains (freekah, emmer, faro, einkorn), honey, jam, fruit juice, cider.</p>
+						</li>
+
+					</ul>
+					<ul>
+						<li><h3 style="text-decoration:underline">Fall</h3>
+			<p><img src="img/apples.jpg" style="float:right; margin-left:15px; border:1px solid silver"><b>Fruit</b>: Apples, Blueberries, Cantaloupe, Cherries, Currants</p>
+			<p><b>Vegetables</b>: Asparagus, Beets, Beet Greens, Broccoli, Cabbage, Carrots, Cauliflower, Celery, Collard Greens, Corn</p>
+			<p><b>Other</b>: Regional grains (freekah, emmer, faro, einkorn), honey, jam, fruit juice, cider.</p>
+						</li>
+
+					</ul>
+					<ul>
+						<li>	<h3 style="text-decoration:underline">Winter</h3>
+			<p><b>Fruit</b>: Apples, Blueberries, Cantaloupe</p>
+			<p><b>Vegetables</b>: Asparagus, Beets, Beet Greens, Broccoli</p>
+			<p><b>Other</b>: Regional grains (freekah, emmer, faro, einkorn), honey, jam, fruit juice, cider.</p>
+
+						</li>
+
+					</ul>
+					
+					<nav>
+						<a href="#">Spring</a>
+						<a href="#">Summer</a>
+						<a href="#">Fall</a>
+						<a href="#">Winter</a>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+	</body>
+</html>

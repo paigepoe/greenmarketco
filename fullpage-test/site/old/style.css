@@ -1,0 +1,255 @@
+
+/* #id .class */
+/* Top Right Bottom Left */ 
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+a {
+color: #3377aa;
+text-decoration:underline;
+}
+
+h2 {
+font-size:40px;
+line-height:.85em;
+margin-bottom:30px;
+}
+
+h3 {
+font-size:22px;
+line-height:1.1em;
+margin-bottom:15px;
+}
+
+body {
+  font-family: Lato, 'Montserrat', Tahoma, sans-serif;
+  font-size:16px;
+  line-height:18px;
+}
+
+body {
+  background-color:#292B33;
+  color:#000000;
+  font-size:100%;
+  min-height:100%;
+}
+
+#wrapper {
+background-color: #FFFFFF;
+max-width: 1440px;
+overflow: hidden;
+position: relative;
+}
+
+#container {
+max-width:920px;
+z-index:5;
+position:relative;
+}
+
+#wrapper, #container {
+margin: 0 auto;
+}
+
+.main-section {
+max-width:920px;
+/* padding-left: 10%;
+padding-right: 10%; */ 
+padding-top:50px;
+padding-bottom:50px;
+z-index: 10;
+color: #888888;
+margin: 0 auto;
+}
+
+.readmore a, .readmore a:visited {
+text-decoration:underline; 
+color: #000000;
+font-size: 1.1em;
+font-weight:bold;
+}
+
+#availability a, #availability a:link, #availability a:visited {
+color:#cccc00;
+}
+
+.readmore a:hover, #availability a:hover {
+color: #0099ee;
+}
+
+.main-section p {
+margin-top: 0;
+margin-bottom: 1em;
+font-size: 17px;
+line-height: 1.1em;
+}
+
+.main-section-background-black {
+z-index:2;
+background-color:rgba(0,0,0,0.15);
+color:white;
+width:1440px;
+margin-left:-260px;
+}
+
+.main-section-background-green {
+z-index:2;
+background-color:rgba(0,28,22,0.65);
+box-shadow: 0 0 6px 6px #888;
+color:white;
+width:1440px;
+margin-left:-260px;
+}
+
+#truck {
+background-image:url('img/truck.jpg');
+background-repeat:no-repeat;
+background-position:right top;
+min-height:500px;
+width:100%;
+float:left;
+}
+
+#truck h1 {
+width:300px;
+font-size:6em;
+color:#bac932;
+line-height:100%;
+}
+
+#nav {
+
+}
+
+#logo {
+float:left;
+min-height:22px;
+margin-top: -2px;
+}
+
+#ext-menu li, #int-menu  li{
+border:none;
+text-align:left;
+text-transform:uppercase;
+display: inline;
+list-style-type: none;
+}
+
+#ext-menu a, #ext-menu a:visited {
+color: #929292;
+text-decoration:none;
+}
+
+#ext-menu a:hover, #int-menu a:hover {
+text-decoration: underline;
+color: #34efaf;
+}
+
+#ext-menu {
+font-size: .8em;
+float:right;
+}
+
+#ext-menu li {
+margin: 2px 12px;
+padding: 2px 6px;
+}
+
+#int-menu li {
+    background-color: #EBEBEB;
+    margin: 2px 4px;
+    max-height: 20px;
+    padding: 3px 28px;
+}
+
+#int-menu  a, #int-menu a:visited {
+text-decoration:none;
+color: #929292;
+}
+
+#int-menu ul {
+text-align:center;
+}
+
+#int-menu {
+font-size: .7em;
+max-height:20px;
+text-align:center;
+}
+
+#mission {
+
+}
+
+#mission p {
+width:400px;
+z-index:11;
+}
+
+#custfarm {
+margin: 0 auto;
+width:920px;
+color:#03430f;
+}
+
+#custfarm img {
+border: 2px solid #C0C0C0;
+}
+
+#custfarm p {
+color:#03430f;
+font-size:17px;
+}
+
+#availability {
+color:#e2e2e2;
+}
+
+#infographic {
+
+}
+
+
+#faq {
+
+}
+
+
+
+#contact {
+
+}
+
+
+
+#footer {
+
+}
+
+#lavalamp {
+position:absolute;
+max-width: 1440px;
+left: 0;
+top: 625px;
+z-index:1;
+opacity:.15;
+filter:alpha(opacity=15); /* For IE8 and earlier */
+}
+
+#lavalamp img {
+z-index:1;
+}
+
+#stickyalias {
+display: none;
+height: 10px;
+}
+		
+#stickyheader {
+width: 100%;
+height: 40px;
+}
